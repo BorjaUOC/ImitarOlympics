@@ -1,0 +1,82 @@
+/* reseteamos los estilos del navegador  */
+/* con el asterisco seleccionamos todo el documento y todos sus elementos
+ así quitamos los margin y padding por defecto */
+ 
+ *{  
+    margin: 0;
+    padding: 0;
+/*     border box hace que nuestro modelo de cajas de mantenga con el tamaño original de nuestro elemento, es decir, que no dependa de otros facotres
+ */    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding:14px 24px;
+    background-color: #f2f2f2;
+}
+
+.navbarLeft{
+    display: flex;
+    gap: 30px;
+    /* flex-wrap: wrap; pone en otra linea los links antes de que se amontonen */
+
+}
+
+.navbarRight{
+    display: flex;
+    gap: 30px;
+
+}
+
+/* hacemos referencia a un selector sin nombre . ni # , haceemos referencia a todos los elementos del documento que tengan ese nombre  */
+.navLink{
+    text-decoration: none;
+    color: #969696;
+    font-size: 14px;
+}
+.navLink2{
+    text-decoration: none;
+    color:#000;
+    font-size: 18px;
+
+
+}
+/* Asi conseguimos que cada vez que pongamos el raton sobre una <a> cambie de color
+Los : nos permiten acceder a las pseudoclases  
+La clase que se muestra con el hover, es una pseudoclase
+*/
+
+ .navLink:hover{
+    color: #000
+ }
+
+i{
+    margin-right:10px;
+}
+
+.navbar2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    color:#000
+}
+
+
+.hamIconContainer{
+    background-color: blue;
+    height: 100%;
+}
+
+.links{
+    display: flex;
+    gap: 30px;
+
+}
+
+.lupaHam{
+    height: 100%;
+    display:flex;
+}
